@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.21"
+    kotlin("plugin.serialization") version "1.9.21"
     `maven-publish`
 }
 
@@ -11,6 +12,9 @@ repositories {
 }
 
 dependencies {
+    // Kotlinx serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
