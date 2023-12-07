@@ -8,12 +8,9 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    maven("https://jitpack.io")
 }
 
 dependencies {
-    implementation("com.github.martinjcosta:retrobudd-contract:v1.2")
-
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 
