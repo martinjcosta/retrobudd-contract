@@ -21,9 +21,9 @@ data class NoteState(
     val cursor: CursorState = CursorState.Normal,
     val isAStack: Boolean = false, // Represents whether this note is an "infinitely" stacked note.
     val isEditable: Boolean = false,
-    val isBeingEdited: Boolean = false,
-    val isBeingDragged: Boolean = false,
-    val isBeingResized: Boolean = false
+    val beingEditedByUserId: String? = null,
+    val beingDraggedByUserId: String? = null,
+    val beingResizedByUserId: String? = null
 )
 
 @Serializable
