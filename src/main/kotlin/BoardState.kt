@@ -33,6 +33,6 @@ data class Color(
     val blue: Int
 )
 
-typealias ModifyNoteState = (NoteState) -> NoteState
-typealias ModifyBoardState = (BoardState) -> BoardState
-typealias SuspendModifyBoardState = suspend (BoardState) -> BoardState
+typealias ModifyNoteState = @Serializable (NoteState) -> @Serializable NoteState
+typealias ModifyBoardState = @Serializable (BoardState) -> @Serializable BoardState
+typealias SuspendModifyBoardState = @Serializable suspend (BoardState) -> @Serializable BoardState
